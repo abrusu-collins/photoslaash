@@ -1,6 +1,6 @@
 import { MdHideImage } from "react-icons/md";
-
 function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer>
       <div className="footer">
@@ -27,7 +27,7 @@ function Footer() {
           <a href="">Terms of Use</a>
           <a href="">Sponsor</a>
         </div>
-        
+
         <div>
           <p className="footer-title">Sposor Us</p>
           <a href="">Patreon</a>
@@ -35,6 +35,7 @@ function Footer() {
           <a href="">buymeacoffee</a>
         </div>
       </div>
+      <p>Copyright &copy; {year}. Built by Collins Abrusu</p>
     </footer>
   );
 }
