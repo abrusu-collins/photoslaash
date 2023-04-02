@@ -7,30 +7,30 @@ function Hero() {
       <p className="hero-text">Compress all your large images with ease</p>
       <div className="points">
         <div>
-          <HiBadgeCheck color="#0362fc" />
-          <p>lorem lorem lorem</p>
+          <HiBadgeCheck color="#0362fc" size={22}/>
+          <p>lorem lorem lorem lorem lorem lorem</p>
         </div>
         <div>
-          <HiBadgeCheck color="#0362fc" />
-          <p>lorem lorem lorem</p>
+          <HiBadgeCheck color="#0362fc" size={22}/>
+          <p>lorem lorem lorem lorem lorem lorem</p>
         </div>
         <div>
-          <HiBadgeCheck color="#0362fc" />
-          <p>lorem lorem lorem</p>
+          <HiBadgeCheck color="#0362fc" size={22}/>
+          <p>lorem lorem lorem lorem lorem lorem</p>
         </div>
         <div>
-          <HiBadgeCheck color="#0362fc" />
-          <p>lorem lorem lorem</p>
+          <HiBadgeCheck color="#0362fc" size={22} />
+          <p>lorem lorem lorem lorem lorem lorem</p>
         </div>
       </div>
       <div className="image-grid">
         <div>
-        <img src="/images/girl.jpg" alt="ss" />
+        <img src="/images/girl.jpg" alt="sgirls" />
         <p>3.28MB</p>
         </div>
         <BsArrowRight size={100} />
 <div>
-<img src="/images/girl4.jpg" alt="ss" />
+<img src="/images/girl4.jpg" alt="girl" />
 <p>229KB</p>
 </div>
       </div>

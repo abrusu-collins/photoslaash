@@ -96,3 +96,7 @@ body {
 .more .more-inner img {
   width: 100%;
 }
+
+.testimonies {
+  height: 50vh;
+}

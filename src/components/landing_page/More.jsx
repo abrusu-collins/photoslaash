@@ -11,7 +11,7 @@ function More() {
           </p>
           <a href="">Try it out</a>
         </div>
-        <img src="/images/img-grid.png" />
+        <img src="/images/img-grid.png" alt="img" />
       </div>
     </div>
   );
