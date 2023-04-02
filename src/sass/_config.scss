@@ -1,0 +1,20 @@
+@font-face {
+  font-family: roboto;
+  src: url("../fonts/roboto-v20-latin-regular.woff2");
+}
+@font-face {
+  font-family: visby;
+  src: url("../fonts/visbycf-heavy.woff2");
+}
+$blue:#0362fc;
+$black:#000000;
+$white:#fcfeff;
+$deep_blue:#035ae8;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: roboto;
+}

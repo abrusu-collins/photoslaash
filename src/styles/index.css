@@ -1,0 +1,98 @@
+@font-face {
+  font-family: roboto;
+  src: url("../fonts/roboto-v20-latin-regular.woff2");
+}
+@font-face {
+  font-family: visby;
+  src: url("../fonts/visbycf-heavy.woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: roboto;
+}
+
+.hero {
+  margin: 30px auto;
+  align-items: center;
+  text-align: center;
+}
+.hero .hero-title {
+  font-family: visby;
+  font-size: 48px;
+}
+.hero .hero-text {
+  margin: 20px 0;
+}
+.hero .points div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 10px;
+}
+.hero .image-grid {
+  width: 60%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  align-items: center;
+  gap: 3rem;
+  border: 2px solid #000000;
+  padding: 30px;
+}
+.hero .image-grid img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.hero a {
+  text-decoration: none;
+  color: #fcfeff;
+  background-color: #0362fc;
+  padding: 15px 20px;
+  display: inline-block;
+  margin: 20px 0;
+}
+.hero a:hover {
+  background-color: #035ae8;
+}
+
+.more {
+  background-color: #0362fc;
+  color: #fcfeff;
+}
+.more .more-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  padding: 30px 0;
+}
+.more .more-inner .left-grid .more-title {
+  font-family: visby;
+  font-size: 48px;
+}
+.more .more-inner .left-grid .more-text {
+  margin: 20px 0;
+}
+.more .more-inner .left-grid a {
+  text-decoration: none;
+  color: #fcfeff;
+  border: 2px solid #fcfeff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin: 20px 0;
+}
+.more .more-inner .left-grid a:hover {
+  background-color: #fcfeff;
+  color: #0362fc;
+}
+.more .more-inner img {
+  width: 100%;
+}
