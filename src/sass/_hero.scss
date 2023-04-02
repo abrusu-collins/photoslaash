@@ -1,8 +1,8 @@
 .hero {
   & .star {
     position: absolute;
-    left: 300px;
-    top: 200px;
+    left: 280px;
+    top: 370px;
     @include animate;
   }
   & .avatar {
@@ -16,7 +16,10 @@
     font-size: 48px;
   }
   & .hero-text {
-    margin: 20px 0;
+    margin: 20px auto;
+    line-height: 28.8px;
+    width: 50%;
+    text-align: left;
   }
   & .points {
     & div {

@@ -1,0 +1,30 @@
+nav {
+  color: $black;
+  padding: 30px 0;
+  & .navbar {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    & img {
+      width: 4%;
+    }
+    & ul {
+      & li {
+        display: inline;
+        list-style: none;
+        & a {
+          text-decoration: none;
+          color: $black;
+        }
+      }
+      & li:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+  & ul {
+    display: none;
+  }
+}
