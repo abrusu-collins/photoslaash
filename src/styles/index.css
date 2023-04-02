@@ -51,7 +51,7 @@ nav ul {
 }
 
 .hero {
-  margin: 30px auto;
+  margin: 60px auto;
   align-items: center;
   text-align: center;
 }
@@ -64,7 +64,7 @@ nav ul {
 .hero .avatar {
   position: absolute;
   right: 300px;
-  top: 100px;
+  top: 150px;
   animation: spin 4s linear infinite;
 }
 .hero .hero-title {
@@ -72,7 +72,7 @@ nav ul {
   font-size: 48px;
 }
 .hero .hero-text {
-  margin: 20px auto;
+  margin: 35px auto 20px auto;
   line-height: 28.8px;
   width: 50%;
   text-align: left;

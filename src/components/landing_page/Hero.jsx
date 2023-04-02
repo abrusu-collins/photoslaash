@@ -29,7 +29,7 @@ function Hero() {
       </div>
       <div className="image-grid">
         <div>
-          <img src="/images/girl.jpg" alt="sgirls" />
+          <img src="/images/girl.jpg" alt="girls" />
           <p>3.28MB</p>
         </div>
         <BsArrowRight size={100} />
