@@ -1,6 +1,18 @@
 .more {
   background-color: $blue;
   color: $white;
+  & .avaatar {
+    position: absolute;
+    left: 40px;
+    top: 1250px;
+    @include animate;
+  }
+  & .sharp {
+    position: absolute;
+    right: 50px;
+    top: 1610px;
+    @include animate;
+  }
   & .more-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

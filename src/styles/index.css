@@ -77,6 +77,9 @@ nav ul {
   width: 50%;
   text-align: left;
 }
+.hero .points {
+  margin-bottom: 50px;
+}
 .hero .points div {
   display: flex;
   align-items: center;
@@ -114,6 +117,18 @@ nav ul {
   background-color: #0362fc;
   color: #fcfeff;
 }
+.more .avaatar {
+  position: absolute;
+  left: 40px;
+  top: 1250px;
+  animation: spin 4s linear infinite;
+}
+.more .sharp {
+  position: absolute;
+  right: 50px;
+  top: 1610px;
+  animation: spin 4s linear infinite;
+}
 .more .more-inner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -147,7 +162,37 @@ nav ul {
 }
 
 .testimonies {
-  height: 50vh;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 60px auto;
+  gap: 2rem;
+}
+.testimonies div {
+  padding: 45px 20px 20px 20px;
+  text-align: center;
+}
+.testimonies div .testimonial-title {
+  font-family: visby;
+  font-size: 30px;
+}
+.testimonies div .testimonial-text {
+  margin: 40px 0 0 0;
+}
+.testimonies .grid1 {
+  border: 2px solid #0362fc;
+  color: #0362fc;
+}
+.testimonies .grid2 {
+  background-color: #000000;
+  color: #fcfeff;
+}
+.testimonies .grid3 {
+  background-color: #0362fc;
+  color: #fcfeff;
+}
+.testimonies .grid4 {
+  border: 2px solid #000000;
 }
 
 @media screen and (max-width: 966px) {

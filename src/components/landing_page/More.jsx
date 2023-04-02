@@ -1,6 +1,9 @@
 function More() {
   return (
     <div className="more">
+              <img src="/images/avaatar.png" className="avaatar" alt="img" />
+              <img src="/images/sharp.png" className="sharp" alt="img" />
+
       <div className="more-inner">
         <div className="left-grid">
           <p className="more-title">Upload More, Save Time</p>
