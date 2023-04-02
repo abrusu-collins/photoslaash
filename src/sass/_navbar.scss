@@ -17,6 +17,9 @@ nav {
         & a {
           text-decoration: none;
           color: $black;
+          &:hover{
+            color: $blue;
+          }
         }
       }
       & li:not(:last-child) {

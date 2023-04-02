@@ -1,4 +1,23 @@
-footer{
-    background-color: $black;
-    height: 40vh;
+footer {
+  background-color: $black;
+  color: $white;
+  padding: 60px 0;
+  & .footer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    margin: auto;
+    gap: 3rem;
+    & div {
+      & .footer-title {
+        font-size: 20px;
+        font-family: visby;
+      }
+      & a {
+        text-decoration: none;
+        color: $white;
+        display: block;
+      }
+    }
+  }
 }

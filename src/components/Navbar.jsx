@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { TfiClose } from "react-icons/tfi";
+import { MdHideImage } from "react-icons/md";
 // import logo from "../assets/images/405_Square.png";
 function NavBar() {
   const [navOpen, setNavOpen] = useState(false);
   return (
     <nav>
       <div className="navbar">
-        <img src="" alt="logo" />
+        <MdHideImage size={35} />
         <ul>
           <li>
             <a href="">Home</a>
