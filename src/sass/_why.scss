@@ -1,0 +1,33 @@
+.why {
+  width: 100%;
+  background-color: $blue;
+  padding: 30px 0;
+  color: $white;
+  & .why-inner {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 3rem;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    & img {
+      width: 100%;
+    }
+    & > div {
+      & .why-title {
+        font-size: 48px;
+        font-family: visby;
+      }
+      & .why-text {
+        margin: 30px 0;
+      }
+      & .points {
+        & div {
+          display: flex;
+          gap: 1rem;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

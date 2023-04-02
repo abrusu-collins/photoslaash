@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Hero from '@/components/landing_page/Hero';
 import More from '@/components/landing_page/More';
 import Testimonies from '@/components/landing_page/Testimonies';
+import Why from '@/components/landing_page/Why';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero/>
       <More/>
       <Testimonies/>
+      <Why/>
     </>
   )
 }

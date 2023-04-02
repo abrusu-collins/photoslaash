@@ -57,8 +57,8 @@ nav ul {
 }
 .hero .star {
   position: absolute;
-  left: 280px;
-  top: 370px;
+  left: 170px;
+  top: 800px;
   animation: spin 4s linear infinite;
 }
 .hero .avatar {
@@ -74,18 +74,8 @@ nav ul {
 .hero .hero-text {
   margin: 35px auto 20px auto;
   line-height: 28.8px;
-  width: 50%;
-  text-align: left;
-}
-.hero .points {
-  margin-bottom: 50px;
-}
-.hero .points div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 10px;
+  width: 60%;
+  text-align: center;
 }
 .hero .image-grid {
   width: 60%;
@@ -202,6 +192,36 @@ nav ul {
 }
 .testimonies .testimonials-inner .grid4 {
   border: 2px solid #000000;
+}
+
+.why {
+  width: 100%;
+  background-color: #0362fc;
+  padding: 30px 0;
+  color: #fcfeff;
+}
+.why .why-inner {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.why .why-inner img {
+  width: 100%;
+}
+.why .why-inner > div .why-title {
+  font-size: 48px;
+  font-family: visby;
+}
+.why .why-inner > div .why-text {
+  margin: 30px 0;
+}
+.why .why-inner > div .points div {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 966px) {

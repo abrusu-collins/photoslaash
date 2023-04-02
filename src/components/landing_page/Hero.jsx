@@ -1,4 +1,3 @@
-import { HiBadgeCheck } from "react-icons/hi";
 import { BsArrowRight } from "react-icons/bs";
 function Hero() {
   return (
@@ -8,25 +7,12 @@ function Hero() {
 
       <p className="hero-title">PhotoSlaash</p>
       <p className="hero-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsum
-        ducimus sunt aperiam laudantium? Esse laudantium consequuntur itaque
-        doloremque ut quidem, delectus mollitia suscipit fugit sint quisquam
-        eum! Sunt, ad.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed libero
+        reiciendis, id tenetur consectetur itaque animi explicabo dolor. Quos
+        exercitationem necessitatibus illum placeat alias quod repellendus quam
+        laborum cum eveniet.
       </p>
-      <div className="points">
-        <div>
-          <HiBadgeCheck color="#0362fc" size={22} />
-          <p>lorem lorem lorem lorem lorem lorem</p>
-        </div>
-        <div>
-          <HiBadgeCheck color="#0362fc" size={22} />
-          <p>lorem lorem lorem lorem lorem lorem</p>
-        </div>
-        <div>
-          <HiBadgeCheck color="#0362fc" size={22} />
-          <p>lorem lorem lorem lorem lorem lorem</p>
-        </div>
-      </div>
+
       <div className="image-grid">
         <div>
           <img src="/images/girl.jpg" alt="girls" />
