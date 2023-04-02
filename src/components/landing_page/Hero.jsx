@@ -3,6 +3,9 @@ import { BsArrowRight } from "react-icons/bs";
 function Hero() {
   return (
     <div className="hero">
+      <img src="/images/star.png" className="star" alt="" />
+      <img src="/images/avatar.png" className="avatar" alt="" />
+
       <p className="hero-title">PhotoSlaash</p>
       <p className="hero-text">Compress all your large images with ease</p>
       <div className="points">

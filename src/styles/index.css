@@ -15,11 +15,27 @@
 body {
   font-family: roboto;
 }
-
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .hero {
   margin: 30px auto;
   align-items: center;
   text-align: center;
+}
+.hero .star {
+  position: absolute;
+  left: 300px;
+  top: 200px;
+  animation: spin 4s linear infinite;
+}
+.hero .avatar {
+  position: absolute;
+  right: 300px;
+  top: 100px;
+  animation: spin 4s linear infinite;
 }
 .hero .hero-title {
   font-family: visby;

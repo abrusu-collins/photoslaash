@@ -6,10 +6,10 @@
   font-family: visby;
   src: url("../fonts/visbycf-heavy.woff2");
 }
-$blue:#0362fc;
-$black:#000000;
-$white:#fcfeff;
-$deep_blue:#035ae8;
+$blue: #0362fc;
+$black: #000000;
+$white: #fcfeff;
+$deep_blue: #035ae8;
 * {
   margin: 0;
   padding: 0;
@@ -17,4 +17,22 @@ $deep_blue:#035ae8;
 }
 body {
   font-family: roboto;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+@mixin animate(){
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
 }
