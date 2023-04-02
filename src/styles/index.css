@@ -162,36 +162,45 @@ nav ul {
 }
 
 .testimonies {
+  margin: 60px auto;
+}
+.testimonies .users {
+  font-size: 48px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-family: visby;
+}
+.testimonies .testimonials-inner {
   width: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 60px auto;
   gap: 2rem;
+  margin: auto;
 }
-.testimonies div {
+.testimonies .testimonials-inner div {
   padding: 45px 20px 20px 20px;
   text-align: center;
 }
-.testimonies div .testimonial-title {
+.testimonies .testimonials-inner div .testimonial-title {
   font-family: visby;
   font-size: 30px;
 }
-.testimonies div .testimonial-text {
+.testimonies .testimonials-inner div .testimonial-text {
   margin: 40px 0 0 0;
 }
-.testimonies .grid1 {
+.testimonies .testimonials-inner .grid1 {
   border: 2px solid #0362fc;
   color: #0362fc;
 }
-.testimonies .grid2 {
+.testimonies .testimonials-inner .grid2 {
   background-color: #000000;
   color: #fcfeff;
 }
-.testimonies .grid3 {
+.testimonies .testimonials-inner .grid3 {
   background-color: #0362fc;
   color: #fcfeff;
 }
-.testimonies .grid4 {
+.testimonies .testimonials-inner .grid4 {
   border: 2px solid #000000;
 }
 

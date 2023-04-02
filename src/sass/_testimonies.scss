@@ -1,34 +1,43 @@
 .testimonies {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   margin: 60px auto;
-  gap: 2rem;
-  & div {
-    padding: 45px 20px 20px 20px;
+  & .users{
+    font-size: 48px;
+    margin-bottom: 60px;
     text-align: center;
+    font-family: visby;
+  }
+  & .testimonials-inner {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: auto;
+    & div {
+      padding: 45px 20px 20px 20px;
+      text-align: center;
 
-    & .testimonial-title {
-      font-family: visby;
-      font-size: 30px;
+      & .testimonial-title {
+        font-family: visby;
+        font-size: 30px;
+      }
+      & .testimonial-text {
+        margin: 40px 0 0 0;
+      }
     }
-    & .testimonial-text {
-      margin: 40px 0 0 0;
+    & .grid1 {
+      border: 2px solid $blue;
+      color: $blue;
     }
-  }
-  & .grid1 {
-    border: 2px solid $blue;
-    color: $blue;
-  }
-  & .grid2 {
-    background-color: $black;
-    color: $white;
-  }
-  & .grid3 {
-    background-color: $blue;
-    color: $white;
-  }
-  & .grid4 {
-    border: 2px solid $black;
+    & .grid2 {
+      background-color: $black;
+      color: $white;
+    }
+    & .grid3 {
+      background-color: $blue;
+      color: $white;
+    }
+    & .grid4 {
+      border: 2px solid $black;
+    }
   }
 }
