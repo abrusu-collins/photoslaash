@@ -4,7 +4,7 @@ function Why() {
     <div className="why">
       <div className="why-inner">
         <div>
-          <p className="why-title">Why Choose us</p>
+          <p className="why-title">Why choose us</p>
           <p className="why-text">
             {" "}
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde

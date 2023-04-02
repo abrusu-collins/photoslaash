@@ -1,0 +1,21 @@
+.contact{
+    padding: 100px 0;
+    text-align: center;
+    & p{
+        font-size: 48px;
+        font-family: visby;
+        margin-bottom: 30px;
+    }
+    & a{
+        text-decoration: none;
+        color: $white;
+        background-color: $blue;
+        padding: 15px 20px;
+        display: inline-block;
+        margin: 20px 0;
+        display: inline-block;
+        &:hover {
+          background-color: $deep_blue;
+        }
+    }
+}

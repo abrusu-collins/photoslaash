@@ -3,6 +3,7 @@ import Hero from '@/components/landing_page/Hero';
 import More from '@/components/landing_page/More';
 import Testimonies from '@/components/landing_page/Testimonies';
 import Why from '@/components/landing_page/Why';
+import Contact from '@/components/landing_page/Contact';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <More/>
       <Testimonies/>
       <Why/>
+      <Contact/>
     </>
   )
 }
