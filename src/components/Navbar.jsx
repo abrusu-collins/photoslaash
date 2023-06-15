@@ -18,10 +18,10 @@ function NavBar() {
             <Link href="/single">Single Image</Link>
           </li>
           <li>
-            <a href="/multiple">Multiple Images</a>
+            <Link href="/multiple">Multiple Images</Link>
           </li>
           <li>
-            <a href="">Sponsor</a>
+            <Link href="">Sponsor</Link>
           </li>
         </ul>
         <div className="bar">
@@ -45,16 +45,16 @@ function NavBar() {
       </div>
       <ul className={navOpen ? "mobile-nav" : ""}>
         <li>
-          <a href="">Home</a>
+          <Link href="/">Home</Link>
         </li>
         <li>
-          <a href="/offering">Single Image</a>
+          <Link href="/single">Single Image</Link>
         </li>
         <li>
-          <a href="/menu">Multiple Images</a>
+          <Link href="/multiple">Multiple Images</Link>
         </li>
         <li>
-          <a href="/about">Sponsor</a>
+          <Link href="">Sponsor</Link>
         </li>
       </ul>
     </nav>
