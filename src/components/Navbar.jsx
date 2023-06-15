@@ -11,16 +11,16 @@ function NavBar() {
         <MdHideImage size={35} />
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="/offering">Single Image</a>
+            <a href="/single">Single Image</a>
           </li>
           <li>
-            <a href="/menu">Multiple Images</a>
+            <a href="/multiple">Multiple Images</a>
           </li>
           <li>
-            <a href="/about">Sponsor</a>
+            <a href="">Sponsor</a>
           </li>
         </ul>
         <div className="bar">

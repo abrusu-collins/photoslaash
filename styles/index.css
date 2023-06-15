@@ -114,7 +114,7 @@ nav ul {
   text-decoration: none;
   color: #fcfeff;
   background-color: #0362fc;
-  padding: 15px 80px;
+  padding: 15px 40px;
   display: inline-block;
   margin: 20px 0;
 }
@@ -162,7 +162,7 @@ nav ul {
   text-decoration: none;
   color: #fcfeff;
   border: 2px solid #fcfeff;
-  padding: 15px 90px;
+  padding: 15px 20px;
   display: inline-block;
   margin: 20px 0;
 }
@@ -260,9 +260,10 @@ nav ul {
   text-decoration: none;
   color: #fcfeff;
   background-color: #0362fc;
-  padding: 15px 80px;
+  padding: 15px 20px;
   display: inline-block;
   margin: 20px 0;
+  display: inline-block;
 }
 .contact a:hover {
   background-color: #035ae8;

@@ -38,3 +38,14 @@ body {
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
 }
+@mixin primary_button(){
+  text-decoration: none;
+  color: $white;
+  background-color: $blue;
+  padding: 15px 80px;
+  display: inline-block;
+  margin: 20px 0;
+  &:hover {
+    background-color: $deep_blue;
+  }
+}
