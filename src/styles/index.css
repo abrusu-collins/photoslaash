@@ -294,6 +294,11 @@ footer > p {
   margin-top: 80px;
 }
 
+.single {
+  width: 40%;
+  margin: 100px auto;
+}
+
 @media screen and (max-width: 966px) {
   nav .navbar {
     width: 100%;
