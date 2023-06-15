@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { TfiClose } from "react-icons/tfi";
 import { MdHideImage } from "react-icons/md";
+import Link from "next/link";
 // import logo from "../assets/images/405_Square.png";
 function NavBar() {
   const [navOpen, setNavOpen] = useState(false);
@@ -11,10 +12,10 @@ function NavBar() {
         <MdHideImage size={35} />
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="/single">Single Image</a>
+            <Link href="/single">Single Image</Link>
           </li>
           <li>
             <a href="/multiple">Multiple Images</a>
