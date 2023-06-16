@@ -6,7 +6,7 @@ const { Dragger } = Upload;
 const props = {
   name: "file",
   multiple: true,
-    action: "https://photoslaash.vercel.app/single",
+    action: "https://photoslaash.vercel.app/",
   onChange(info) {
     const { status } = info.file;
     if (status !== "uploading") {
