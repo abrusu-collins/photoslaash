@@ -6,7 +6,7 @@ const { Dragger } = Upload;
 const props = {
   name: "file",
   multiple: true,
-    action: "https://photoslaash.vercel.app/",
+  // action: "https://photoslaash.vercel.app/",
   onChange(info) {
     const { status } = info.file;
     if (status !== "uploading") {
@@ -28,7 +28,7 @@ const props = {
           } else {
             const data = window.URL.createObjectURL(result);
             const link = document.createElement("a");
-            link.href = result;
+            link.href = data;
             link.download = `${info.file.name}`;
             document.body.appendChild(link);
             link.click();
@@ -66,8 +66,50 @@ function single() {
           uploading company data or other banned files.
         </p>
       </Dragger>
+      <input
+        type="file"
+        id="file"
+        accept="image/*"
+        onChange={(e) => {
+          const currentFile = e.target.files[0];
+          new Compressor(currentFile, {
+            quality: 0.6,
+
+            // The compression process is asynchronous,
+            // which means you have to access the `result` in the `success` hook function.
+            success(result) {
+              if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+                return window.navigator.msSaveOrOpenBlob(result);
+              } else {
+                const data = window.URL.createObjectURL(result);
+                const link = document.createElement("a");
+                link.href = data;
+                link.download = `${"image"}`;
+                document.body.appendChild(link);
+                link.click();
+              }
+
+              console.log("Upload success");
+              //   });
+            },
+            error(err) {
+              console.log(err.message);
+            },
+          });
+        }}
+      ></input>
     </div>
   );
 }
 
 export default single;
+
+// import * as React from "react";
+// import { value, FileUploader } from "baseui/file-uploader";
+
+// export default () => {
+//   const [errorMessage, setErrorMessage] = React.useState(
+//     ""
+//   );
+//   return <FileUploader errorMessage={errorMessage} />;
+// }
