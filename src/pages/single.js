@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Compressor from "compressorjs";
+import { useToast } from "@chakra-ui/react";
 import { Slider, Switch } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { message, Upload } from "antd";
@@ -9,7 +10,7 @@ function Single() {
   const [currentFile, setCurrentFile] = useState("");
   const [quality, setQuality] = useState(0.5);
   const [disabled, setDisabled] = useState(false);
-
+  const toast = useToast();
   const props = {
     name: "file",
     multiple: false,
@@ -42,9 +43,18 @@ function Single() {
           link.download = `${currentFile.name}`;
           document.body.appendChild(link);
           link.click();
+          toast({
+            title: "Compressed image downloaded",
+            description: `Size of compressed image is ${(
+              result.size /
+              1000 /
+              1000
+            ).toFixed(3)} MB`,
+            status: "success",
+            duration: 9000,
+            isClosable: true,
+          });
         }
-
-        alert(`${result.size / 1000 / 1000} MB`);
       },
       error(err) {
         console.log(err.message);

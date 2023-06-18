@@ -29,7 +29,7 @@ function Footer() {
         </div>
 
         <div>
-          <p className="footer-title">Sposor Us</p>
+          <p className="footer-title">Sponsor Us</p>
           <a href="">Patreon</a>
           <a href="">ko-fi</a>
           <a href="">buymeacoffee</a>
