@@ -1,115 +1,79 @@
-import React from "react";
+import React, { useState } from "react";
 import Compressor from "compressorjs";
+import { Slider, Switch } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { message, Upload } from "antd";
 const { Dragger } = Upload;
-const props = {
-  name: "file",
-  multiple: true,
-  // action: "https://photoslaash.vercel.app/",
-  onChange(info) {
-    const { status } = info.file;
-    if (status !== "uploading") {
-      console.log(info.file, info.fileList);
-    }
-    if (status === "done") {
+
+function Single() {
+  const [currentFile, setCurrentFile] = useState("");
+  const [quality, setQuality] = useState(0.5);
+  const [disabled, setDisabled] = useState(false);
+
+  const props = {
+    name: "file",
+    multiple: false,
+    action: "http://localhost:3000/",
+    beforeUpload: () => false,
+    onChange(info) {
       message.success(`${info.file.name} file uploaded successfully.`);
-      const currentFile = info.file;
+      setCurrentFile(info.file);
       console.log(currentFile);
+    },
+    onDrop(e) {
+      console.log("Dropped files", e.dataTransfer.files);
+    },
+  };
+  const onChange = (e) => {
+    setQuality(e / 100);
+  };
+  const download = (e) => {
+    e.preventDefault();
+    new Compressor(currentFile, {
+      quality: quality,
 
-      new Compressor(currentFile, {
-        quality: 0.6,
+      success(result) {
+        if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+          return window.navigator.msSaveOrOpenBlob(result);
+        } else {
+          const data = window.URL.createObjectURL(result);
+          const link = document.createElement("a");
+          link.href = data;
+          link.download = `${currentFile.name}`;
+          document.body.appendChild(link);
+          link.click();
+        }
 
-        // The compression process is asynchronous,
-        // which means you have to access the `result` in the `success` hook function.
-        success(result) {
-          if (window.navigator && window.navigator.msSaveOrOpenBlob) {
-            return window.navigator.msSaveOrOpenBlob(result);
-          } else {
-            const data = window.URL.createObjectURL(result);
-            const link = document.createElement("a");
-            link.href = data;
-            link.download = `${info.file.name}`;
-            document.body.appendChild(link);
-            link.click();
-          }
-
-          console.log("Upload success");
-          //   });
-        },
-        error(err) {
-          console.log(err.message);
-        },
-      });
-
-      // });
-    } else if (status === "error") {
-      message.error(`${info.file.name} file upload failed.`);
-    }
-  },
-  onDrop(e) {
-    console.log("Dropped files", e.dataTransfer.files);
-  },
-};
-function single() {
+        alert(`${result.size / 1000 / 1000} MB`);
+      },
+      error(err) {
+        console.log(err.message);
+      },
+    });
+  };
   return (
     <div className="single">
-      <Dragger {...props}>
-        <p className="ant-upload-drag-icon">
-          <InboxOutlined />
-        </p>
-        <p className="ant-upload-text">
-          Click or drag file to this area to upload
-        </p>
-        <p className="ant-upload-hint">
-          Support for a single or bulk upload. Strictly prohibited from
-          uploading company data or other banned files.
-        </p>
-      </Dragger>
-      <input
-        type="file"
-        id="file"
-        accept="image/*"
-        onChange={(e) => {
-          const currentFile = e.target.files[0];
-          new Compressor(currentFile, {
-            quality: 0.6,
-
-            // The compression process is asynchronous,
-            // which means you have to access the `result` in the `success` hook function.
-            success(result) {
-              if (window.navigator && window.navigator.msSaveOrOpenBlob) {
-                return window.navigator.msSaveOrOpenBlob(result);
-              } else {
-                const data = window.URL.createObjectURL(result);
-                const link = document.createElement("a");
-                link.href = data;
-                link.download = `${"image"}`;
-                document.body.appendChild(link);
-                link.click();
-              }
-
-              console.log("Upload success");
-              //   });
-            },
-            error(err) {
-              console.log(err.message);
-            },
-          });
-        }}
-      ></input>
+      <p className="title">Upload and compress a single image</p>
+      <div className="dragger">
+        <Dragger {...props}>
+          <p className="ant-upload-drag-icon">
+            <InboxOutlined />
+          </p>
+          <p className="ant-upload-text">
+            Click or drag file to this area to upload
+          </p>
+          <p className="ant-upload-hint">Support for a single file upload.</p>
+        </Dragger>
+      </div>
+      <div className="slider">
+        <p> Quality(%)</p>
+        <Slider defaultValue={50} disabled={disabled} onChange={onChange} />
+      </div>
+      <a href="" onClick={download}>
+        Download
+      </a>
     </div>
   );
 }
 
-export default single;
-
-// import * as React from "react";
-// import { value, FileUploader } from "baseui/file-uploader";
-
-// export default () => {
-//   const [errorMessage, setErrorMessage] = React.useState(
-//     ""
-//   );
-//   return <FileUploader errorMessage={errorMessage} />;
-// }
+export default Single;

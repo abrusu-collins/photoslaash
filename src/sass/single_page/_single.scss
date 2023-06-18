@@ -1,4 +1,24 @@
-.single{
+.single {
+  text-align: center;
+  margin-bottom: 100px;
+  & .title {
+    font-family: visby;
+    font-size: 48px;
+    margin: 100px 0 100px 0;
+    text-align: center;
+  }
+  & .dragger {
     width: 40%;
-    margin: 100px auto;
+    margin: auto;
+  }
+  & .slider {
+    width: 40%;
+    margin: 30px auto;
+    & p {
+      text-align: left;
+    }
+  }
+  & a {
+    @include primary_button;
+  }
 }

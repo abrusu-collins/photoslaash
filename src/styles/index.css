@@ -295,8 +295,36 @@ footer > p {
 }
 
 .single {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.single .title {
+  font-family: visby;
+  font-size: 48px;
+  margin: 100px 0 100px 0;
+  text-align: center;
+}
+.single .dragger {
   width: 40%;
-  margin: 100px auto;
+  margin: auto;
+}
+.single .slider {
+  width: 40%;
+  margin: 30px auto;
+}
+.single .slider p {
+  text-align: left;
+}
+.single a {
+  text-decoration: none;
+  color: #fcfeff;
+  background-color: #0362fc;
+  padding: 15px 80px;
+  display: inline-block;
+  margin: 20px 0;
+}
+.single a:hover {
+  background-color: #035ae8;
 }
 
 @media screen and (max-width: 966px) {
