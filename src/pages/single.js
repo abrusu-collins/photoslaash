@@ -47,8 +47,8 @@ function Single() {
             title: "Compressed image downloaded",
             description: `Size of compressed image is ${(
               result.size /
-              1000 /
-              1000
+              1024 /
+              1024
             ).toFixed(3)} MB`,
             status: "success",
             duration: 9000,

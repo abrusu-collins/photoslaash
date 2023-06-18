@@ -3,7 +3,6 @@ import { HiBars3 } from "react-icons/hi2";
 import { TfiClose } from "react-icons/tfi";
 import { MdHideImage } from "react-icons/md";
 import Link from "next/link";
-// import logo from "../assets/images/405_Square.png";
 function NavBar() {
   const [navOpen, setNavOpen] = useState(false);
   return (
