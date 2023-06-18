@@ -17,9 +17,12 @@ function Single() {
     action: "http://localhost:3000/",
     beforeUpload: () => false,
     onChange(info) {
-      message.success(`${info.file.name} file uploaded successfully.`);
-      setCurrentFile(info.file);
-      console.log(currentFile);
+      if (currentFile) {
+        message.success(`${info.file.name} file removed successfully.`);
+      } else {
+        message.success(`${info.file.name} file uploaded successfully.`);
+        setCurrentFile(info.file);
+      }
     },
     onDrop(e) {
       console.log("Dropped files", e.dataTransfer.files);
