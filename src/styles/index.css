@@ -309,6 +309,15 @@ footer > p {
   margin: 100px 0 100px 0;
   text-align: center;
 }
+.single .info {
+  background-color: #9fc6fc;
+  color: #035ae8;
+  width: 40%;
+  margin: -50px auto 50px auto;
+  padding: 15px 40px;
+  border: 1px solid #0362fc;
+  border-radius: 8px;
+}
 .single .dragger {
   width: 40%;
   margin: auto;

@@ -7,6 +7,15 @@
     margin: 100px 0 100px 0;
     text-align: center;
   }
+  & .info{
+    background-color: $light_blue;
+    color: $deep_blue;
+    width: 40%;
+    margin: -50px auto 50px auto;
+    padding: 15px 40px;
+    border: 1px solid $blue;
+    border-radius: 8px;
+  }
   & .dragger {
     width: 40%;
     margin: auto;
