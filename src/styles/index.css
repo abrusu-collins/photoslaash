@@ -156,7 +156,7 @@ nav ul {
   font-size: 48px;
 }
 .more .more-inner .left-grid .more-text {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 .more .more-inner .left-grid a {
   text-decoration: none;
@@ -164,7 +164,6 @@ nav ul {
   border: 2px solid #fcfeff;
   padding: 15px 90px;
   display: inline-block;
-  margin: 20px 0;
 }
 .more .more-inner .left-grid a:hover {
   background-color: #fcfeff;
@@ -317,6 +316,8 @@ footer > p {
   padding: 15px 40px;
   border: 1px solid #0362fc;
   border-radius: 8px;
+  display: flex;
+  gap: 1rem;
 }
 .single .dragger {
   width: 40%;

@@ -4,6 +4,7 @@ import { useToast } from "@chakra-ui/react";
 import { Slider, Switch } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { message, Upload } from "antd";
+import { BsFillInfoCircleFill } from "react-icons/bs";
 import nProgress, * as NProgress from "nprogress";
 import "nprogress/nprogress.css";
 const { Dragger } = Upload;
@@ -80,10 +81,13 @@ function Multiple() {
   return (
     <div className="single">
       <p className="title">Upload and compress multiple images</p>
-      <p className="info">
-        Note that for multiple images, the download is automatic so make sure
-        you set the quality before uploading
-      </p>
+      <div className="info">
+        <BsFillInfoCircleFill size={30} />
+        <p>
+          Note that for multiple images, the download is automatic so make sure
+          you set the quality before uploading
+        </p>
+      </div>
       <div className="dragger">
         <Dragger {...props}>
           <p className="ant-upload-drag-icon">
@@ -92,7 +96,9 @@ function Multiple() {
           <p className="ant-upload-text">
             Click or drag file to this area to upload
           </p>
-          <p className="ant-upload-hint">Support for a single file upload.</p>
+          <p className="ant-upload-hint">
+            Support for a multiple file uploads.
+          </p>
         </Dragger>
       </div>
       <div className="slider">

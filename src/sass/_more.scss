@@ -27,7 +27,7 @@
         font-size: 48px;
       }
       & .more-text {
-        margin: 20px 0;
+        margin: 40px 0;
       }
       & a {
         text-decoration: none;
@@ -35,7 +35,6 @@
         border: 2px solid $white;
         padding: 15px 90px;
         display: inline-block;
-        margin: 20px 0;
         &:hover {
           background-color: $white;
           color: $blue;

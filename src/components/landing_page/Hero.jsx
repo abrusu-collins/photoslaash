@@ -7,10 +7,10 @@ function Hero() {
 
       <p className="hero-title">PhotoSlaash</p>
       <p className="hero-text">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed libero
-        reiciendis, id tenetur consectetur itaque animi explicabo dolor. Quos
-        exercitationem necessitatibus illum placeat alias quod repellendus quam
-        laborum cum eveniet.
+        Photoslaash is an image compression app, the perfect solution to
+        optimize your images without compromising quality. Effortlessly reduce
+        file sizes while preserving the visual integrity of your photos, making
+        them easier to store, share, and upload.
       </p>
 
       <div className="image-grid">

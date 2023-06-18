@@ -1,16 +1,17 @@
 function More() {
   return (
     <div className="more">
-              <img src="/images/avaatar.png" className="avaatar" alt="img" />
-              <img src="/images/sharp.png" className="sharp" alt="img" />
+      <img src="/images/avaatar.png" className="avaatar" alt="img" />
+      <img src="/images/sharp.png" className="sharp" alt="img" />
 
       <div className="more-inner">
         <div className="left-grid">
           <p className="more-title">Upload More, Save Time</p>
           <p className="more-text">
-            lorem corporis fugiat veniam, quo dolorum voluptates ullam aut
-            provident voluptatibus numquam. Rem eaque, fugit eos officiis rerum
-            fuga obcaecati minima!
+            Photoslaash empowers users to effortlessly upload and compress
+            multiple images simultaneously. Enjoy the convenience of bulk
+            compression, saving you time and effort. Effortlessly optimize and
+            shrink your entire photo collection with just a few clicks.
           </p>
           <a href="">Try it out</a>
         </div>
