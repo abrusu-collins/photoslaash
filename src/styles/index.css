@@ -199,6 +199,7 @@ nav ul {
 }
 .testimonies .testimonials-inner div .testimonial-text {
   margin: 40px 0 0 0;
+  text-align: left;
 }
 .testimonies .testimonials-inner div .stars {
   display: flex;
