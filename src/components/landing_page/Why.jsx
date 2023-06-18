@@ -6,24 +6,27 @@ function Why() {
         <div>
           <p className="why-title">Why choose us</p>
           <p className="why-text">
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde
-            hic accusantium inventore molestias consequuntur exercitationem
-            similique, praesentium pariatur ab commodi odio ratione. Optio
-            perferendis eligendi exercitationem odit aliquam tempore!{" "}
+            When it comes to image compression, our app stands out as the
+            ultimate choice, offering a winning combination of exceptional
+            compression ratios and uncompromised image quality. The following
+            are reasons why you should start using photoslaash today.
           </p>
           <div className="points">
             <div>
               <HiBadgeCheck color="#fcfeff" size={22} />
-              <p>lorem lorem lorem lorem lorem lorem</p>
+              <p>Fast processing time</p>
             </div>
             <div>
               <HiBadgeCheck color="#fcfeff" size={22} />
-              <p>lorem lorem lorem lorem lorem lorem</p>
+              <p>User friendly app</p>
             </div>
             <div>
               <HiBadgeCheck color="#fcfeff" size={22} />
-              <p>lorem lorem lorem lorem lorem lorem</p>
+              <p>Simultaneously compress multiple images</p>
+            </div>
+            <div>
+              <HiBadgeCheck color="#fcfeff" size={22} />
+              <p>Compressed images retain aesthetic quality</p>
             </div>
           </div>
         </div>

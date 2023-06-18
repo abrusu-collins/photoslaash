@@ -23,10 +23,10 @@ function Testimonies() {
         <div className="grid2">
           <p className="testimonial-title">Best app ever</p>
           <p className="testimonial-text">
-            I've tried several image compression tools, but none compare to this
+            I&apos;ve tried several image compression tools, but none compare to this
             app. It handled my diverse range of images flawlessly, from
             professional photographs to casual snapshots. The compressed images
-            look fantastic, and I can't believe how much faster they load on my
+            look fantastic, and I can&apos;t believe how much faster they load on my
             website now.
           </p>
           <div className="stars">
@@ -42,7 +42,7 @@ function Testimonies() {
           <p className="testimonial-text">
             I love how user-friendly this app is! Uploading and compressing
             multiple images at once is a breeze, and the results are impressive.
-            It's made managing my photo library so much easier, allowing me to
+            It&apos;s made managing my photo library so much easier, allowing me to
             free up space on my devices and enjoy seamless sharing across all my
             social media platforms
           </p>
@@ -57,9 +57,9 @@ function Testimonies() {
         <div className="grid4">
           <p className="testimonial-title">Best app ever</p>
           <p className="testimonial-text">
-            I'm amazed at how this app strikes the perfect balance between file
+            I&apos;m amazed at how this app strikes the perfect balance between file
             size reduction and image quality. It managed to significantly shrink
-            my images while retaining the vibrant colors and sharp details. It's
+            my images while retaining the vibrant colors and sharp details. It&apos;s
             become an essential tool for my online business.
           </p>
           <div className="stars">

@@ -8,8 +8,7 @@ function Footer() {
           <MdHideImage color="#fcfeff" size={40} />
           <p className="footer-title">PhotoSlaash</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            explicabo nulla voluptates vel omnis
+          Compress with Confidence, Preserve with Perfection!
           </p>
         </div>
 

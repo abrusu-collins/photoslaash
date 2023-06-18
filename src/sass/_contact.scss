@@ -4,9 +4,10 @@
   & p {
     font-size: 48px;
     font-family: visby;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   & a {
     @include primary_button;
+    margin: 0;
   }
 }
