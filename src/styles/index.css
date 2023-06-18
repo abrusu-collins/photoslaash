@@ -201,6 +201,11 @@ nav ul {
 .testimonies .testimonials-inner div .testimonial-text {
   margin: 40px 0 0 0;
 }
+.testimonies .testimonials-inner div .stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .testimonies .testimonials-inner .grid1 {
   border: 2px solid #0362fc;
   color: #0362fc;

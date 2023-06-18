@@ -58,6 +58,16 @@ function Single() {
       },
       error(err) {
         console.log(err.message);
+        if (
+          err.message === "The first argument must be a File or Blob object."
+        ) {
+          toast({
+            title: "Please upload the image you want to compress",
+            status: "error",
+            duration: 9000,
+            isClosable: true,
+          });
+        }
       },
     });
   };

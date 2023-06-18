@@ -23,6 +23,11 @@
       & .testimonial-text {
         margin: 40px 0 0 0;
       }
+      & .stars{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
     & .grid1 {
       border: 2px solid $blue;
