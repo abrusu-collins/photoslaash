@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HiBars3BottomRight } from "react-icons/hi2";
+import { HiBars3 } from "react-icons/hi2";
 import { TfiClose } from "react-icons/tfi";
 import { MdHideImage } from "react-icons/md";
 import Link from "next/link";
@@ -34,7 +34,7 @@ function NavBar() {
               }}
             />
           ) : (
-            <HiBars3BottomRight
+            <HiBars3
               size={35}
               onClick={(e) => {
                 setNavOpen(!navOpen);
