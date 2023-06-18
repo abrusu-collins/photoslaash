@@ -4,13 +4,14 @@ import { useToast } from "@chakra-ui/react";
 import { Slider, Switch } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { message, Upload } from "antd";
-import * as NProgress from "nprogress";
+import nProgress, * as NProgress from "nprogress";
 import "nprogress/nprogress.css";
 const { Dragger } = Upload;
 
 function Multiple() {
   const [currentFile, setCurrentFile] = useState("");
   const [quality, setQuality] = useState(0.5);
+  const [showToast, setShowToast] = useState(false);
   const [disabled, setDisabled] = useState(false);
   const toast = useToast();
   const props = {
@@ -31,6 +32,7 @@ function Multiple() {
     setQuality(e / 100);
   };
   const download = () => {
+    setShowToast(false);
     NProgress.start();
     new Compressor(currentFile, {
       quality: quality,
@@ -45,21 +47,22 @@ function Multiple() {
           link.download = `${currentFile.name}`;
           document.body.appendChild(link);
           link.click();
-          toast({
-            title: "Compressed image downloaded",
-            description: `Size of compressed image is ${(
-              result.size /
-              1024 /
-              1024
-            ).toFixed(3)} MB`,
-            status: "success",
-            duration: 9000,
-            isClosable: true,
-          });
+          NProgress.inc(0.2);
+          setTimeout(() => {
+            nProgress.done();
+            setShowToast(true);
+          }, 5000);
         }
       },
       error(err) {
         console.log(err.message);
+        toast({
+          title: "An error occurred",
+          description: "Refresh and try again",
+          status: "error",
+          duration: 9000,
+          isClosable: true,
+        });
       },
     });
   };
@@ -69,6 +72,17 @@ function Multiple() {
       download();
     }
   }, [currentFile]);
+  useEffect(() => {
+    if (showToast) {
+      toast({
+        title: "Done",
+        description: "All your images have been comprrssed and downloaded",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      });
+    }
+  }, [showToast]);
   return (
     <div className="single">
       <p className="title">Upload and compress multiple images</p>
@@ -91,9 +105,6 @@ function Multiple() {
         <p> Quality(%)</p>
         <Slider defaultValue={50} disabled={disabled} onChange={onChange} />
       </div>
-      {/* <a href="" onClick={download}>
-        Download
-      </a> */}
     </div>
   );
 }
