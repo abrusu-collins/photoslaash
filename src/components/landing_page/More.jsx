@@ -1,3 +1,4 @@
+import Link from "next/link";
 function More() {
   return (
     <div className="more">
@@ -13,7 +14,7 @@ function More() {
             compression, saving you time and effort. Effortlessly optimize and
             shrink your entire photo collection with just a few clicks.
           </p>
-          <a href="">Try it out</a>
+          <Link href="/multiple">Try it out</Link>
         </div>
         <img src="/images/img-grid.png" alt="img" />
       </div>

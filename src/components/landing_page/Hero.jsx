@@ -1,4 +1,5 @@
 import { BsArrowRight } from "react-icons/bs";
+import Link from "next/link";
 import {
   Modal,
   ModalOverlay,
@@ -25,8 +26,8 @@ function Hero() {
               <img src="/images/Shrug-bro.svg" alt="" />
 
               <div className="modal-buttons">
-                <a href="">Single Image</a>
-                <a href="">Multiple Images</a>
+                <Link href="/single">Single Image</Link>
+                <Link href="/multiple">Multiple Images</Link>
               </div>
             </div>
           </ModalBody>
