@@ -56,13 +56,7 @@ function Multiple() {
       },
       error(err) {
         console.log(err.message);
-        toast({
-          title: "An error occurred",
-          description: "Refresh and try again",
-          status: "error",
-          duration: 9000,
-          isClosable: true,
-        });
+        nProgress.done();
       },
     });
   };
@@ -76,7 +70,7 @@ function Multiple() {
     if (showToast) {
       toast({
         title: "Done",
-        description: "All your images have been comprrssed and downloaded",
+        description: "All your images have been compressed and downloaded",
         status: "success",
         duration: 9000,
         isClosable: true,
