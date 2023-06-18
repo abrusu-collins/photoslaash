@@ -1,6 +1,6 @@
 .testimonies {
   margin: 100px auto;
-  & .users{
+  & .users {
     font-size: 48px;
     margin-bottom: 60px;
     text-align: center;
@@ -13,19 +13,25 @@
     gap: 2rem;
     margin: auto;
     & div {
-      padding: 45px 20px 20px 20px;
+      padding: 20px;
       text-align: center;
-
-      & .testimonial-title {
-        font-family: visby;
-        font-size: 30px;
+      & .testifier {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & .testimonial-title {
+          font-family: visby;
+          font-size: 30px;
+        }
+        & img {
+          width: 10%;
+        }
       }
       & .testimonial-text {
-        margin: 40px 0 0 0;
         text-align: left;
       }
-      & .stars{
-        display:flex;
+      & .stars {
+        display: flex;
         align-items: center;
         justify-content: center;
       }

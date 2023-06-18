@@ -5,7 +5,10 @@ function Testimonies() {
       <p className="users">What our users say about us</p>
       <div className="testimonials-inner">
         <div className="grid1">
-          <p className="testimonial-title">Best app ever</p>
+          <div className="testifier">
+            <p className="testimonial-title">Clement Owusu</p>
+            <img src="/images/blackboy.png" alt="" />
+          </div>
           <p className="testimonial-text">
             Wow, this image compression app is a game-changer! I was able to
             compress a batch of 100 high-resolution images in just a few
@@ -21,13 +24,16 @@ function Testimonies() {
           </div>
         </div>
         <div className="grid2">
-          <p className="testimonial-title">Best app ever</p>
+          <div className="testifier">
+            <p className="testimonial-title"> Ivy Scott</p>
+            <img src="/images/woman.png" alt="" />
+          </div>
           <p className="testimonial-text">
-            I&apos;ve tried several image compression tools, but none compare to this
-            app. It handled my diverse range of images flawlessly, from
+            I&apos;ve tried several image compression tools, but none compare to
+            this app. It handled my diverse range of images flawlessly, from
             professional photographs to casual snapshots. The compressed images
-            look fantastic, and I can&apos;t believe how much faster they load on my
-            website now.
+            look fantastic, and I can&apos;t believe how much faster they load
+            on my website now.
           </p>
           <div className="stars">
             <AiFillStar color="#0fcfeff" size={25} />
@@ -38,13 +44,16 @@ function Testimonies() {
           </div>
         </div>
         <div className="grid3">
-          <p className="testimonial-title">Best app ever</p>
+          <div className="testifier">
+            <p className="testimonial-title">Jane Afi</p>
+            <img src="/images/blackgirl.png" alt="" />
+          </div>
           <p className="testimonial-text">
             I love how user-friendly this app is! Uploading and compressing
             multiple images at once is a breeze, and the results are impressive.
-            It&apos;s made managing my photo library so much easier, allowing me to
-            free up space on my devices and enjoy seamless sharing across all my
-            social media platforms
+            It&apos;s made managing my photo library so much easier, allowing me
+            to free up space on my devices and enjoy seamless sharing across all
+            my social media platforms
           </p>
           <div className="stars">
             <AiFillStar color="#fcfeff" size={25} />
@@ -55,12 +64,15 @@ function Testimonies() {
           </div>
         </div>
         <div className="grid4">
-          <p className="testimonial-title">Best app ever</p>
+          <div className="testifier">
+            <p className="testimonial-title">John Yaw</p>
+            <img src="/images/man.png" alt="" />
+          </div>
           <p className="testimonial-text">
-            I&apos;m amazed at how this app strikes the perfect balance between file
-            size reduction and image quality. It managed to significantly shrink
-            my images while retaining the vibrant colors and sharp details. It&apos;s
-            become an essential tool for my online business.
+            I&apos;m amazed at how this app strikes the perfect balance between
+            file size reduction and image quality. It managed to significantly
+            shrink my images while retaining the vibrant colors and sharp
+            details. It&apos;s become an essential tool for my online business.
           </p>
           <div className="stars">
             <AiFillStar color="#000000" size={25} />

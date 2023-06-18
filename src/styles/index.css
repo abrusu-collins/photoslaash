@@ -214,15 +214,22 @@ nav ul {
   margin: auto;
 }
 .testimonies .testimonials-inner div {
-  padding: 45px 20px 20px 20px;
+  padding: 20px;
   text-align: center;
 }
-.testimonies .testimonials-inner div .testimonial-title {
+.testimonies .testimonials-inner div .testifier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonies .testimonials-inner div .testifier .testimonial-title {
   font-family: visby;
   font-size: 30px;
 }
+.testimonies .testimonials-inner div .testifier img {
+  width: 10%;
+}
 .testimonies .testimonials-inner div .testimonial-text {
-  margin: 40px 0 0 0;
   text-align: left;
 }
 .testimonies .testimonials-inner div .stars {

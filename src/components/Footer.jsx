@@ -1,4 +1,5 @@
 import { MdHideImage } from "react-icons/md";
+import Link from "next/link";
 function Footer() {
   const year = new Date().getFullYear();
   return (
@@ -7,23 +8,21 @@ function Footer() {
         <div>
           <MdHideImage color="#fcfeff" size={40} />
           <p className="footer-title">PhotoSlaash</p>
-          <p>
-          Compress with Confidence, Preserve with Perfection!
-          </p>
+          <p>Compress with Confidence, Preserve with Perfection!</p>
         </div>
 
         <div>
           <p className="footer-title">Quick Links</p>
-          <a href="">Home</a>
-          <a href="">Single Image</a>
-          <a href="">Multiple Images</a>
-          <a href="">Sponsor</a>
+          <Link href="/">Home</Link>
+          <Link href="/single">Single Image</Link>
+          <Link href="/multiple">Multiple Images</Link>
+          <Link href="">Sponsor</Link>
         </div>
 
         <div>
           <p className="footer-title">Legal Center</p>
-          <a href="">Privacy Policy</a>
-          <a href="">Terms of Use</a>
+          <a href="/coming-soon">Privacy Policy</a>
+          <a href="/coming-soon">Terms of Use</a>
           <a href="">Sponsor</a>
         </div>
 

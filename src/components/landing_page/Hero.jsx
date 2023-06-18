@@ -19,7 +19,7 @@ function Hero() {
       <Modal isOpen={isOpen} onClose={onClose} size={"xl"}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>How many images will you compress?</ModalHeader>
+          <ModalHeader>How many image(s) will you compress?</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <div className="modal-content">
@@ -32,11 +32,7 @@ function Hero() {
             </div>
           </ModalBody>
 
-          <ModalFooter background={"white"} borderRadius={"10px"}>
-            <Button colorScheme="red" mr={3} onClick={onClose}>
-              Close
-            </Button>
-          </ModalFooter>
+
         </ModalContent>
       </Modal>
       <div className="hero">
