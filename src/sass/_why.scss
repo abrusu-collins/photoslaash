@@ -1,7 +1,7 @@
 .why {
   width: 100%;
   background-color: $blue;
-  padding: 30px 0;
+  padding: 100px 0;
   color: $white;
   & .why-inner {
     display: grid;
@@ -24,6 +24,7 @@
       & .points {
         & div {
           display: flex;
+          align-items: center;
           gap: 1rem;
           margin-bottom: 5px;
         }

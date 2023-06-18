@@ -28,6 +28,10 @@ function Why() {
               <HiBadgeCheck color="#fcfeff" size={22} />
               <p>Compressed images retain aesthetic quality</p>
             </div>
+            <div>
+              <HiBadgeCheck color="#fcfeff" size={22} />
+              <p>It&apos;s FREE OF CHARGE!!!!!!</p>
+            </div>
           </div>
         </div>
         <img src="/images/confused.jpg" alt="" />

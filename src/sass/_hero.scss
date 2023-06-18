@@ -16,7 +16,8 @@
     font-size: 48px;
   }
   & .hero-text {
-    margin: 35px auto 20px auto;
+    // margin: 35px auto 20px auto;
+    margin: 40px auto;
     line-height: 28.8px;
     width: 60%;
     text-align: center;
@@ -26,7 +27,7 @@
   text-align: center;
   & .image-grid {
     width: 60%;
-    margin: 30px auto;
+    margin: 100px auto;
     display: grid;
     grid-template-columns: 3fr 1fr 3fr;
     align-items: center;
@@ -40,5 +41,24 @@
   }
   & a {
     @include primary_button;
+    margin: 0;
+  }
+}
+
+.modal-content{
+  & img{
+    width: 50%;
+    margin: auto;
+
+  }
+  & .modal-buttons{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    & a{
+      @include primary_button;
+      padding: 15px 30px;
+    }
   }
 }
