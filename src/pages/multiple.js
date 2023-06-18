@@ -4,6 +4,8 @@ import { useToast } from "@chakra-ui/react";
 import { Slider, Switch } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { message, Upload } from "antd";
+import * as NProgress from "nprogress";
+import "nprogress/nprogress.css";
 const { Dragger } = Upload;
 
 function Multiple() {
@@ -29,6 +31,7 @@ function Multiple() {
     setQuality(e / 100);
   };
   const download = () => {
+    NProgress.start();
     new Compressor(currentFile, {
       quality: quality,
 
