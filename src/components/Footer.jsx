@@ -6,7 +6,9 @@ function Footer() {
     <footer>
       <div className="footer">
         <div>
-          <MdHideImage color="#fcfeff" size={40} />
+          <Link href="/">
+            <MdHideImage color="#fcfeff" size={40} />
+          </Link>
           <p className="footer-title">PhotoSlaash</p>
           <p>Compress with Confidence, Preserve with Perfection!</p>
         </div>

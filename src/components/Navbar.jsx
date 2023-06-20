@@ -8,7 +8,9 @@ function NavBar() {
   return (
     <nav>
       <div className="navbar">
-        <MdHideImage size={35} />
+        <Link href="/">
+          <MdHideImage size={35} />
+        </Link>
         <ul>
           <li>
             <Link href="/">Home</Link>
