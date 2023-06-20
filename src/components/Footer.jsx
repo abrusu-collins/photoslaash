@@ -21,8 +21,8 @@ function Footer() {
 
         <div>
           <p className="footer-title">Legal Center</p>
-          <a href="/coming-soon">Privacy Policy</a>
-          <a href="/coming-soon">Terms of Use</a>
+          <Link href="/coming-soon">Privacy Policy</Link>
+          <Link href="/coming-soon">Terms of Use</Link>
           <a href="">Sponsor</a>
         </div>
 

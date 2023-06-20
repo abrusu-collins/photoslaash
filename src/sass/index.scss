@@ -1,4 +1,4 @@
-@import 'config';
+@import "config";
 
 // Home page imports
 @import "navbar";
@@ -11,5 +11,8 @@
 
 // single page imports
 @import "./single_page/single";
+
+//coming soon page
+@import "coming_soon";
 
 @import "responsive";

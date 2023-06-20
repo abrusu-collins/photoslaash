@@ -1,0 +1,12 @@
+.coming-soon {
+  text-align: center;
+  & .title {
+    font-family: visby;
+    font-size: 48px;
+    margin-top: 60px;
+  }
+  & img {
+    width: 40%;
+    margin: auto;
+  }
+}
