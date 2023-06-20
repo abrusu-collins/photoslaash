@@ -6,10 +6,9 @@ function Sponsor() {
       <div className="sponsor-left">
         <p className="sponsor-title">Wanna sponsor me?</p>
         <p className="sponsor-text">
-          Wow, this image compression app is a game-changer! I was able to
-          compress a batch of 100 high-resolution images in just a few minutes,
-          without any loss in quality. It saved me so much storage space and
-          made sharing them a breeze.
+          Loving Photoslaash? Join our journey and become a sponsor, supporting
+          innovation and empowering users worldwide. Together, let&apos;s
+          transform the way we share and store captivating visuals.
         </p>
         <div className="sponsor-buttons">
           <a href="https://www.buymeacoffee.com/collinsabrusu">buymeacoffee</a>
