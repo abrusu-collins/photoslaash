@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Error404() {
   return (
-    <div>Error404</div>
-  )
+    <div className="error-404">
+      <img src="/images/error.svg"></img>
+    </div>
+  );
 }
 
 export default Error404;

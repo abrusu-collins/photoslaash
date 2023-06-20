@@ -390,6 +390,11 @@ footer > p {
   margin: auto;
 }
 
+.error-404 img {
+  width: 40%;
+  margin: auto;
+}
+
 @media screen and (max-width: 966px) {
   nav .navbar {
     width: 100%;
