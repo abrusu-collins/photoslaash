@@ -1,0 +1,26 @@
+.sponsor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  align-items: center;
+  margin: 70px auto;
+  & .sponsor-left {
+    & .sponsor-title {
+      font-size: 48px;
+      font-family: visby;
+    }
+    & .sponsor-text {
+      margin: 40px 0;
+    }
+    & .sponsor-buttons {
+      display: flex;
+      gap: 2rem;
+      & a {
+        @include primary_button;
+      }
+    }
+  }
+  & img {
+    width: 100%;
+  }
+}

@@ -16,21 +16,20 @@ function Footer() {
           <Link href="/">Home</Link>
           <Link href="/single">Single Image</Link>
           <Link href="/multiple">Multiple Images</Link>
-          <Link href="">Sponsor</Link>
+          <Link href="/sponsor">Sponsor</Link>
         </div>
 
         <div>
           <p className="footer-title">Legal Center</p>
           <Link href="/coming-soon">Privacy Policy</Link>
           <Link href="/coming-soon">Terms of Use</Link>
-          <a href="">Sponsor</a>
         </div>
 
         <div>
           <p className="footer-title">Sponsor Us</p>
-          <a href="">Patreon</a>
-          <a href="">ko-fi</a>
-          <a href="">buymeacoffee</a>
+          <a href="https://www.buymeacoffee.com/collinsabrusu">buymeacoffee</a>
+          <a href="https://www.patreon.com/abrusucollins">Patreon</a>
+          <a href="https://ko-fi.com/abrusucollins">ko-fi</a>
         </div>
       </div>
       <p>Copyright &copy; {year}. Built by Collins Abrusu</p>

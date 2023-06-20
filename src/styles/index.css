@@ -377,6 +377,39 @@ footer > p {
   background-color: #035ae8;
 }
 
+.sponsor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  align-items: center;
+  margin: 70px auto;
+}
+.sponsor .sponsor-left .sponsor-title {
+  font-size: 48px;
+  font-family: visby;
+}
+.sponsor .sponsor-left .sponsor-text {
+  margin: 40px 0;
+}
+.sponsor .sponsor-left .sponsor-buttons {
+  display: flex;
+  gap: 2rem;
+}
+.sponsor .sponsor-left .sponsor-buttons a {
+  text-decoration: none;
+  color: #fcfeff;
+  background-color: #0362fc;
+  padding: 15px 80px;
+  display: inline-block;
+  margin: 20px 0;
+}
+.sponsor .sponsor-left .sponsor-buttons a:hover {
+  background-color: #035ae8;
+}
+.sponsor img {
+  width: 100%;
+}
+
 .coming-soon {
   text-align: center;
 }
