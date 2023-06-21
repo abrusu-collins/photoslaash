@@ -66,7 +66,63 @@
     }
   }
 }
+//app page responsiveness
+@media screen and (max-width: 1028px) {
+  .single {
+    & .info {
+      width: 60%;
+    }
+    & .dragger {
+      width: 60%;
+    }
+    & .slider {
+      width: 60%;
+    }
+  }
+}
 
+@media screen and (max-width: 1000px) {
+  .single {
+    & .title {
+      font-size: 35px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .single {
+    & .info {
+      width: 80%;
+    }
+    & .dragger {
+      width: 80%;
+    }
+    & .slider {
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width: 524px) {
+  .single {
+    & .info {
+      width: 90%;
+    }
+    & .dragger {
+      width: 90%;
+    }
+    & .slider {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 382px) {
+  .single {
+    & .info {
+      padding: 15px;
+    }
+  }
+}
 //support page responsiveness
 @media screen and (max-width: 1083px) {
   .sponsor {
