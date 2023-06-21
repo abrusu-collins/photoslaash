@@ -581,6 +581,34 @@ footer > p {
     padding: 0 20px;
   }
 }
+@media screen and (max-width: 426px) {
+  .testimonies .testimonials-inner div .testifier img {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 408px) {
+  .hero .hero-text {
+    width: 90%;
+  }
+  .hero .image-grid {
+    width: 90%;
+  }
+  .hero a {
+    width: 90%;
+  }
+  .more .sharp {
+    display: none;
+  }
+  .more .more-inner {
+    width: 90%;
+  }
+  .testimonies .testimonials-inner {
+    width: 90%;
+  }
+  .why .why-inner {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 1028px) {
   .single .info {
     width: 60%;

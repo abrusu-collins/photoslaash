@@ -31,12 +31,10 @@ function Hero() {
               </div>
             </div>
           </ModalBody>
-
-
         </ModalContent>
       </Modal>
       <div className="hero">
-        <img src="/images/star.png" className="star" alt="" />
+        {/* <img src="/images/star.png" className="star" alt="" /> */}
         <img src="/images/avatar.png" className="avatar" alt="" />
 
         <p className="hero-title">PhotoSlaash</p>

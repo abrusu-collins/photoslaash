@@ -6,7 +6,7 @@ function Testimonies() {
       <div className="testimonials-inner">
         <div className="grid1">
           <div className="testifier">
-            <p className="testimonial-title">Clement Owusu</p>
+            <p className="testimonial-title">Joe Owusu</p>
             <img src="/images/blackboy.png" alt="" />
           </div>
           <p className="testimonial-text">

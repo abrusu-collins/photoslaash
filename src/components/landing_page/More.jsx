@@ -2,7 +2,7 @@ import Link from "next/link";
 function More() {
   return (
     <div className="more">
-      <img src="/images/avaatar.png" className="avaatar" alt="img" />
+      {/* <img src="/images/avaatar.png" className="avaatar" alt="img" /> */}
       <img src="/images/sharp.png" className="sharp" alt="img" />
 
       <div className="more-inner">
