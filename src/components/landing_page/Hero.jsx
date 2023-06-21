@@ -60,21 +60,12 @@ function Hero() {
             <img src="/images/girl.jpg" alt="girls" />
             <p>3.28MB</p>
           </div>
-          <BsArrowRight size={100} />
+          <BsArrowRight size={100} className="arrow" />
           <div>
             <img src="/images/girl4.jpg" alt="girl" />
             <p>229KB</p>
           </div>
         </div>
-        {/* <a
-          href=""
-          onClick={(e) => {
-            e.preventDefault();
-            onOpen();
-          }}
-        >
-          Upload an Image
-        </a> */}
       </div>
     </>
   );

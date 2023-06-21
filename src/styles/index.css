@@ -178,6 +178,7 @@ nav ul {
 .more .more-inner .left-grid .more-title {
   font-family: visby;
   font-size: 48px;
+  line-height: 70px;
 }
 .more .more-inner .left-grid .more-text {
   margin: 40px 0;
@@ -205,6 +206,7 @@ nav ul {
   margin-bottom: 60px;
   text-align: center;
   font-family: visby;
+  line-height: 70px;
 }
 .testimonies .testimonials-inner {
   width: 80%;
@@ -273,6 +275,7 @@ nav ul {
 .why .why-inner > div .why-title {
   font-size: 48px;
   font-family: visby;
+  line-height: 70px;
 }
 .why .why-inner > div .why-text {
   margin: 30px 0;
@@ -292,6 +295,7 @@ nav ul {
   font-size: 48px;
   font-family: visby;
   margin-bottom: 60px;
+  line-height: 70px;
 }
 .contact a {
   text-decoration: none;
@@ -481,6 +485,100 @@ footer > p {
 @media screen and (max-width: 417px) {
   nav .navbar img {
     width: 15%;
+  }
+}
+@media screen and (max-width: 1234px) {
+  .hero .hero-text {
+    width: 80%;
+  }
+  .hero .image-grid {
+    width: 80%;
+  }
+  .more .sharp {
+    display: none;
+  }
+  .more .more-inner {
+    width: 90%;
+  }
+  .testimonies .testimonials-inner {
+    width: 90%;
+  }
+  .why .why-inner {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .more .more-inner {
+    grid-template-columns: 1fr;
+  }
+  .why .why-inner {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 978px) {
+  .hero .avatar {
+    display: none;
+  }
+}
+@media screen and (max-width: 894px) {
+  .hero .hero-text {
+    width: 90%;
+  }
+  .hero .image-grid {
+    width: 90%;
+  }
+  .testimonies .testimonials-inner {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 754px) {
+  .hero .hero-title {
+    font-size: 35px;
+  }
+  .hero .hero-text {
+    text-align: left;
+  }
+  .hero .image-grid {
+    width: 60%;
+    grid-template-columns: 1fr;
+    align-items: center;
+    border: none;
+  }
+  .hero .image-grid .arrow {
+    transform: rotate(90deg);
+    margin: auto;
+  }
+  .more .more-inner .left-grid .more-title {
+    font-size: 35px;
+  }
+  .testimonies .users {
+    font-size: 35px;
+  }
+  .why .why-inner > div .why-title {
+    font-size: 35px;
+  }
+  .contact p {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 548px) {
+  .hero a {
+    width: 70%;
+  }
+  .hero .image-grid {
+    width: 80%;
+  }
+  .more .more-inner .left-grid .more-title {
+    padding: 0 20px;
+  }
+  .testimonies .users {
+    padding: 0 20px;
+  }
+  .why .why-inner > div .why-title {
+    padding: 0 20px;
+  }
+  .contact p {
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 1028px) {

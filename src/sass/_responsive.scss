@@ -66,6 +66,195 @@
     }
   }
 }
+//home page responsiveness
+@media screen and (max-width: 1234px) {
+  .hero {
+    // & .star {
+    //   position: absolute;
+    //   left: 170px;
+    //   top: 800px;
+    //   @include animate;
+    // }
+    // & .avatar {
+    //   position: absolute;
+    //   right: 300px;
+    //   top: 150px;
+    //   @include animate;
+    // }
+    // & .hero-title {
+    //   font-family: visby;
+    //   font-size: 48px;
+    // }
+    & .hero-text {
+      // margin: 40px auto;
+      // line-height: 28.8px;
+      width: 80%;
+      // text-align: center;
+    }
+    // margin: 60px auto;
+    // align-items: center;
+    // text-align: center;
+    & .image-grid {
+      width: 80%;
+      // margin: 100px auto;
+      // display: grid;
+      // grid-template-columns: 3fr 1fr 3fr;
+      // align-items: center;
+      // gap: 3rem;
+      // border: 2px solid $black;
+      // padding: 30px;
+      // & img {
+      //   width: 100%;
+      //   margin-bottom: 10px;
+      // }
+    }
+    // & a {
+    //   @include primary_button;
+    //   margin: 0;
+    // }
+  }
+  .more {
+    & .sharp {
+      display: none;
+    }
+    & .more-inner {
+      width: 90%;
+    }
+  }
+  .testimonies {
+    & .testimonials-inner {
+      width: 90%;
+    }
+  }
+  .why {
+    & .why-inner {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 1050px) {
+  .more {
+    & .more-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+  .why {
+    & .why-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@media screen and (max-width: 978px) {
+  .hero {
+    & .avatar {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 894px) {
+  .hero {
+    & .hero-text {
+      width: 90%;
+    }
+
+    & .image-grid {
+      width: 90%;
+    }
+  }
+  .testimonies {
+    & .testimonials-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@media screen and (max-width: 754px) {
+  .hero {
+    & .hero-title {
+      font-size: 35px;
+    }
+    & .hero-text {
+      text-align: left;
+    }
+    & .image-grid {
+      width: 60%;
+      grid-template-columns: 1fr;
+      align-items: center;
+      border: none;
+      & .arrow {
+        transform: rotate(90deg);
+        margin: auto;
+      }
+    }
+  }
+  .more {
+    & .more-inner {
+      & .left-grid {
+        & .more-title {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+  .testimonies {
+    & .users {
+      font-size: 35px;
+    }
+  }
+
+  .why {
+    & .why-inner {
+      & > div {
+        & .why-title {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+  .contact {
+    & p {
+      font-size: 35px;
+    }
+  }
+}
+@media screen and (max-width: 548px) {
+  .hero {
+    & a {
+      width: 70%;
+    }
+    & .image-grid {
+      width: 80%;
+    }
+  }
+  .more {
+    & .more-inner {
+      & .left-grid {
+        & .more-title {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+  .testimonies {
+    & .users {
+      padding: 0 20px;
+    }
+  }
+
+  .why {
+    & .why-inner {
+      & > div {
+        & .why-title {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+  .contact {
+    & p {
+      padding: 0 20px;
+    }
+  }
+}
 //app page responsiveness
 @media screen and (max-width: 1028px) {
   .single {
