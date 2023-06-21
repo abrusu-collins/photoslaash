@@ -66,3 +66,89 @@
     }
   }
 }
+
+//support page responsiveness
+@media screen and (max-width: 1083px) {
+  .sponsor {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1021px) {
+  .sponsor {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    width: 70%;
+    text-align: center;
+    & .sponsor-left {
+      & .sponsor-buttons {
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+      }
+    }
+    & img {
+      width: 70%;
+      margin: auto;
+    }
+  }
+}
+@media screen and (max-width: 659px) {
+  .sponsor {
+    & .sponsor-left {
+      & .sponsor-title {
+        font-size: 35px;
+      }
+    }
+    & img {
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width: 630px) {
+  .sponsor {
+    & .sponsor-left {
+      & .sponsor-buttons {
+        flex-direction: column;
+        & a {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 542px) {
+  .sponsor {
+    & img {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 484px) {
+  .sponsor {
+    width: 80%;
+    & .sponsor-left {
+      & .sponsor-title {
+        line-height: 50px;
+      }
+    }
+  }
+}
+//coming soon responsiveness
+
+//404 responsiveness
+
+//footer responsiveness
+@media screen and (max-width: 897px) {
+  footer {
+    & .footer {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+}
+@media screen and (max-width: 505px) {
+  footer {
+    & .footer {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -310,6 +310,7 @@ footer {
   background-color: #000000;
   color: #fcfeff;
   padding: 60px 0;
+  width: 100%;
 }
 footer .footer {
   width: 80%;
@@ -402,6 +403,7 @@ footer > p {
   padding: 15px 80px;
   display: inline-block;
   margin: 20px 0;
+  margin: 0;
 }
 .sponsor .sponsor-left .sponsor-buttons a:hover {
   background-color: #035ae8;
@@ -477,5 +479,66 @@ footer > p {
 @media screen and (max-width: 417px) {
   nav .navbar img {
     width: 15%;
+  }
+}
+@media screen and (max-width: 1083px) {
+  .sponsor {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1021px) {
+  .sponsor {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    width: 70%;
+    text-align: center;
+  }
+  .sponsor .sponsor-left .sponsor-buttons {
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .sponsor img {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 659px) {
+  .sponsor .sponsor-left .sponsor-title {
+    font-size: 35px;
+  }
+  .sponsor img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .sponsor .sponsor-left .sponsor-buttons {
+    flex-direction: column;
+  }
+  .sponsor .sponsor-left .sponsor-buttons a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 542px) {
+  .sponsor img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 484px) {
+  .sponsor {
+    width: 80%;
+  }
+  .sponsor .sponsor-left .sponsor-title {
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 897px) {
+  footer .footer {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+@media screen and (max-width: 505px) {
+  footer .footer {
+    grid-template-columns: 1fr;
   }
 }
