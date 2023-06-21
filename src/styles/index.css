@@ -499,6 +499,7 @@ footer > p {
   .modal-content .modal-buttons a {
     margin: 0;
     width: 70%;
+    text-align: center;
   }
 }
 @media screen and (max-width: 1234px) {
