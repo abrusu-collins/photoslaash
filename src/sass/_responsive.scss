@@ -66,6 +66,23 @@
     }
   }
 }
+//modal responsiveness
+@media screen and (max-width: 434px) {
+  .modal-content {
+    & img {
+      width: 70%;
+    }
+    & .modal-buttons {
+      flex-direction: column;
+      gap: 2rem;
+      & a {
+        margin: 0;
+        width: 70%;
+      }
+      margin-bottom: 30px;
+    }
+  }
+}
 //home page responsiveness
 @media screen and (max-width: 1234px) {
   .hero {
