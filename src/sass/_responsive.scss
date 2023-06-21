@@ -123,6 +123,15 @@
     }
   }
 }
+@media screen and (max-width: 376px) {
+  .single {
+    & .title {
+      font-size: 30px;
+      padding: 0 20px;
+      text-align: left;
+    }
+  }
+}
 //support page responsiveness
 @media screen and (max-width: 1083px) {
   .sponsor {
@@ -185,6 +194,10 @@
     & .sponsor-left {
       & .sponsor-title {
         line-height: 50px;
+        text-align: left;
+      }
+      & .sponsor-text {
+        text-align: left;
       }
     }
   }
