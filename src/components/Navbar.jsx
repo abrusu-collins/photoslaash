@@ -55,7 +55,7 @@ function NavBar() {
           <Link href="/multiple">Multiple Images</Link>
         </li>
         <li>
-          <Link href="">Sponsor</Link>
+          <Link href="/sponsor">Sponsor</Link>
         </li>
       </ul>
     </nav>
