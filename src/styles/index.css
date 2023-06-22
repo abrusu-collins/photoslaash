@@ -454,7 +454,7 @@ footer > p {
 }
 @media screen and (max-width: 831px) {
   nav .navbar {
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
   }
   nav .navbar img {
