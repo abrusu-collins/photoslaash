@@ -3,6 +3,8 @@ import Compressor from "compressorjs";
 import { useToast } from "@chakra-ui/react";
 import { Slider, Switch } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
+import mixpanel from "mixpanel-browser";
+mixpanel.init("c2d2405209ce3c42e4f2953c6859580a");
 import { message, Upload } from "antd";
 const { Dragger } = Upload;
 
@@ -57,6 +59,7 @@ function Single() {
             duration: 9000,
             isClosable: true,
           });
+          mixpanel.track("single compression");
         }
       },
       error(err) {

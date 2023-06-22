@@ -5,6 +5,8 @@ import { Slider, Switch } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { message, Upload } from "antd";
 import { BsFillInfoCircleFill } from "react-icons/bs";
+import mixpanel from "mixpanel-browser";
+mixpanel.init("c2d2405209ce3c42e4f2953c6859580a");
 import nProgress, * as NProgress from "nprogress";
 import "nprogress/nprogress.css";
 const { Dragger } = Upload;
@@ -52,6 +54,7 @@ function Multiple() {
           setTimeout(() => {
             nProgress.done();
             setShowToast(true);
+            mixpanel.track("multiple compression");
           }, 5000);
         }
       },
