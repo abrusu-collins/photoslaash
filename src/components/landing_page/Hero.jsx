@@ -33,7 +33,7 @@ function Hero() {
           </ModalBody>
         </ModalContent>
       </Modal>
-      <div className="hero">
+      <div className="hero container">
         {/* <img src="/images/star.png" className="star" alt="" /> */}
         <img src="/images/avatar.png" className="avatar" alt="" />
 

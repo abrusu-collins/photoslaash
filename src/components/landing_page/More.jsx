@@ -5,7 +5,7 @@ function More() {
       {/* <img src="/images/avaatar.png" className="avaatar" alt="img" /> */}
       <img src="/images/sharp.png" className="sharp" alt="img" />
 
-      <div className="more-inner">
+      <div className="more-inner container">
         <div className="left-grid">
           <p className="more-title">Upload More, Save Time</p>
           <p className="more-text">

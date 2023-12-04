@@ -453,3 +453,9 @@
     }
   }
 }
+
+@media screen and (min-width:2038px) {
+ .hero .avatar, .more .sharp{
+    display:none;
+  }
+}

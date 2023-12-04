@@ -7,7 +7,7 @@ function NavBar() {
   const [navOpen, setNavOpen] = useState(false);
   return (
     <nav>
-      <div className="navbar">
+      <div className="navbar container">
         <Link href="/">
           <MdHideImage size={35} />
         </Link>

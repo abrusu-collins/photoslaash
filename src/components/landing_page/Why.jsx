@@ -2,7 +2,7 @@ import { HiBadgeCheck } from "react-icons/hi";
 function Why() {
   return (
     <div className="why">
-      <div className="why-inner">
+      <div className="why-inner container">
         <div>
           <p className="why-title">Why choose us</p>
           <p className="why-text">

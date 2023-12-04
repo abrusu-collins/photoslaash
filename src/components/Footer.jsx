@@ -4,7 +4,7 @@ function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer>
-      <div className="footer">
+      <div className="footer container">
         <div>
           <Link href="/">
             <MdHideImage color="#fcfeff" size={40} />

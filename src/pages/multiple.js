@@ -82,7 +82,7 @@ function Multiple() {
     }
   }, [showToast]);
   return (
-    <div className="single">
+    <div className="single container">
       <p className="title">Upload and compress multiple images</p>
       <div className="info">
         <BsFillInfoCircleFill size={30} />

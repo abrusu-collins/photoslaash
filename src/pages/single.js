@@ -78,7 +78,7 @@ function Single() {
     });
   };
   return (
-    <div className="single">
+    <div className="single container">
       <p className="title">Upload and compress a single image</p>
       <div className="dragger">
         <Dragger {...props}>

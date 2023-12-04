@@ -3,7 +3,7 @@ function Testimonies() {
   return (
     <div className="testimonies">
       <p className="users">What our users say about us</p>
-      <div className="testimonials-inner">
+      <div className="testimonials-inner container">
         <div className="grid1">
           <div className="testifier">
             <p className="testimonial-title">Joe Owusu</p>

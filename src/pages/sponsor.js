@@ -2,7 +2,7 @@ import React from "react";
 
 function Sponsor() {
   return (
-    <div className="sponsor">
+    <div className="sponsor container">
       <div className="sponsor-left">
         <p className="sponsor-title">Wanna sponsor me?</p>
         <p className="sponsor-text">
